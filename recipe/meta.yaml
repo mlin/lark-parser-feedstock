@@ -1,5 +1,5 @@
 {% set name = "lark-parser" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9f4e4711b0837d682051009d232e6df6b37a1278db4568a8221124bb8c1dc8a
+  sha256: 78d1e293a1fb06f10373552af95f70832e2bfe19aebfc3b142ea6c03b2ea0597
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'a modern parsing library'
+  summary: a modern parsing library
 
   description: |
     Lark is a modern general-purpose parsing library for Python.
