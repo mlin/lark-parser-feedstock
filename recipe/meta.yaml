@@ -1,5 +1,5 @@
 {% set name = "lark-parser" %}
-{% set version = "0.8.6" %}
+{% set version = "0.8.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bde2abb9ce3dac79765b6e6a96bd90cf3aad55639e0940adb8156dd574b637f4
+  sha256: d3eb24599d64e57ec4cc716d266181caf5c4a7d7a6ea87a0d51027e49131ff33
 
 build:
   number: 0
